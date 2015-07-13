@@ -1,1 +1,1 @@
-# project-s
+# project-s Scala sample project
