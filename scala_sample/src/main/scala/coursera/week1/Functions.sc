@@ -24,11 +24,21 @@ object Functions {
     loop(a, 0)
   }
 
+  def summm(f:Int=> Int ) : ( Int, Int) => Int = {
+    def sumF(a :Int, b:Int) : Int = {
+      if (a>b) 0 else f(a) + sumF(a+1, b)
+    }
+    sumF
+  }
+
+
   sumInts(3, 6)
   sumCubes(3, 6)
   sumFactorials(3, 6)
+
   def summInt(a: Int, b: Int) = summ(x => x, a, b)
   def summCubes(a: Int, b: Int) = summ(cube, a, b)
+
   sum(id, 3, 6)
   sum(cube, 3, 6)
   sum(fact, 3, 6)
@@ -38,5 +48,5 @@ object Functions {
   sum((x: Int) => x * x * x, 3, 6)
 
 
-
+  summm(id)(3,6)
 }
