@@ -1,3 +1,4 @@
+import coursera.week3._
 import coursera.week4._
 
 object nth {
@@ -23,4 +24,5 @@ object nth {
 
   anon(3)
   anonShort(3)
+
 }

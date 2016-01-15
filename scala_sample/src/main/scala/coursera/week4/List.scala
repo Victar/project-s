@@ -1,6 +1,5 @@
 package coursera.week4
 
-import _root_.instsets.Empty
 
 /**
   * Created by viktor.kadol on 14.12.15.
